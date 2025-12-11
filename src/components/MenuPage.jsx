@@ -1,4 +1,4 @@
-import { FaFilter, FaUtensils, FaChevronDown, FaChevronUp, FaChevronRight, FaWhatsapp, FaStar, FaFire, FaPlus, FaMinus } from 'react-icons/fa';
+import { FaFilter, FaUtensils, FaChevronDown, FaChevronUp, FaChevronRight, FaWhatsapp, FaStar, FaFire, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa';
 import { useState } from 'react';
 import '../styles/MenuPage.css';
 
@@ -93,6 +93,7 @@ const pizzas = [
     name : "Paneer and Corn",
     category: "Veg Pizzas",
     price: 90,
+     image: "/P & C -pizza.jpg",
     isPopular: true, 
   },
 
@@ -101,6 +102,7 @@ const pizzas = [
     name : "Onion and Jalepino",
     category: "Veg Pizzas",
     price: 90,
+    image: "/O & J -pizza.jpg",
     isPopular: true,
   },
 
@@ -109,6 +111,7 @@ const pizzas = [
     name: "Paneer and Onion",
     category: "Veg Pizzas",
     price: 90,
+    image: "/P & O -pizza.jpg",
     isPopular: true,
   },
 
@@ -117,6 +120,7 @@ const pizzas = [
     name: "BBQ",
     category: "NonVeg Pizzas",
     price: 90,
+    image: "/BBQ-pizza.jpg",
     isPopular: true,
   },
 
@@ -125,6 +129,7 @@ const pizzas = [
     name: "Spicy Chicken",
     category: "NonVeg Pizzas",
     price: 90,
+    image: "/spicy-chicken-pizza.jpg",
     isPopular: true,
   },
 
@@ -133,6 +138,7 @@ const pizzas = [
     name: "Chicken Sausage",
     category: "NonVeg Pizzas",
     price: 90,
+    image: "/chicken-sausage-pizza.jpg",
     isPopular: true,
   },
 
@@ -142,6 +148,7 @@ const pizzas = [
     name: "American Chicken",
     category: "NonVeg Pizzas",
     price: 90,
+     image: "/American-pizza.jpg",
     isPopular: true,
   },
 
@@ -151,6 +158,7 @@ const pizzas = [
     name: "Onion and BBQ",
     category: "NonVeg Pizzas",
     price: 110,
+      image: "/O & BBQ-pizza.jpg",
     isPopular: true,
   },
   
@@ -159,6 +167,7 @@ const pizzas = [
     name: "Capsicum and Spicy Chicken",
     category: "NonVeg Pizzas",
     price: 110,
+    image: "/S & Cap-pizza.jpg",
     isPopular: true,
   },
 
@@ -167,6 +176,7 @@ const pizzas = [
     name: "Onion and Chicken Sausage",
     category: "NonVeg Pizzas",
     price: 110,
+    image: "/O & CS-pizza.jpg",
     isPopular: true,
   },
 
@@ -176,6 +186,7 @@ const pizzas = [
     name: "Chicken Loaded Pizza",
     category: "NonVeg Pizzas",
     price: 130,
+    image: "/chickenL-pizza.jpg",
     isPopular: true,
   },
 
@@ -253,11 +264,13 @@ export default function MenuPage() {
     }));
   };
 
-  const handleWhatsAppOrder = (pizzaName, quantity = 1) => {
-    const message = `Hi, I'd like to order ${quantity} ${pizzaName}.`;
-    const phoneNumber = "YOUR_WHATSAPP_NUMBER";
-    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
-  };
+   const addToCart = (pizza, quantity) => {
+  // Add your cart logic here
+  console.log(`Added ${quantity} ${pizza.name} to cart`);
+  // Example: You might want to use a context or state management for cart
+  // setCartItems(prev => [...prev, { ...pizza, quantity }]);
+};
+
 
   // Filter pizzas based on selected categories and sizes
   const filteredPizzas = pizzas.filter(pizza => {
@@ -398,31 +411,39 @@ export default function MenuPage() {
                 
                 <p className="pizza-category">{pizza.category} • {pizza.size}</p>
                 
-                <div className="price-section">
-                  <span className="price">₹{pizza.price}</span>
-                  <div className="quantity-selector">
-                    <button 
-                      onClick={() => updateQuantity(pizza.id, -1)}
-                      className="quantity-btn"
-                    >
+              <div className="cart-actions">
+  <div className="quantity-selector">
+    <button 
+      onClick={(e) => {
+        e.stopPropagation();
+        updateQuantity(pizza.id, -1);
+      }}
+      className="quantity-btn"
+    >
+
                       <FaMinus />
-                    </button>
-                    <span className="quantity">{quantities[pizza.id] || 1}</span>
-                    <button 
-                      onClick={() => updateQuantity(pizza.id, 1)}
-                      className="quantity-btn"
-                    >
-                      <FaPlus />
+                     </button>
+    <span className="quantity">{quantities[pizza.id] || 1}</span>
+    <button 
+      onClick={(e) => {
+        e.stopPropagation();
+        updateQuantity(pizza.id, 1);
+      }}
+      className="quantity-btn"
+    >
+                <FaPlus />
                     </button>
                   </div>
                 </div>
-                
                 <button 
-                  className="whatsapp-btn"
-                  onClick={() => handleWhatsAppOrder(pizza.name, quantities[pizza.id] || 1)}
-                >
-                  <FaWhatsapp className="whatsapp-icon" />
-                  Order on WhatsApp
+                  className="cart-btn"
+                  onClick={(e) => {
+      e.stopPropagation();
+      addToCart(pizza, quantities[pizza.id] || 1);
+    }}
+  >
+                  <FaShoppingCart className="cart-icon" />
+                  Add to cart
                 </button>
               </div>
             </div>
