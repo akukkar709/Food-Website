@@ -1,10 +1,195 @@
-import { FaFilter, FaUtensils, FaChevronDown, FaChevronUp, FaChevronRight } from 'react-icons/fa';
+import { FaFilter, FaUtensils, FaChevronDown, FaChevronUp, FaChevronRight, FaWhatsapp, FaStar, FaFire, FaPlus, FaMinus } from 'react-icons/fa';
 import { useState } from 'react';
-import '../styles/MenuPage.css'
+import '../styles/MenuPage.css';
+
+const pizzas = [
+  {
+    id: 1,
+    name: "Cheese Onion Pizza",
+    category: "Veg Pizzas",
+    price: 60,
+    image: "/cheese-onion-pizza.jpg",
+    isPopular: true,
+
+  },
+  {
+    id: 2,
+    name: "Cheese Capsicum",
+    category: "Veg Pizzas",
+    price: 60,
+     image: "/cheese-capsicum-pizza.jpg",
+    isPopular: true,
+   
+  },
+  {
+    id: 3,
+    name: "Cheese Tomato",
+    category: "Veg Pizzas",
+    price: 60,
+    image: "/cheese-tomato-pizza.jpg",
+    isPopular: true,
+  },
+
+  {
+    id: 4,
+    name : "Cheese Corn",
+    category: "Veg Pizzas",
+    price: 60,
+    image: "/cheese-corn-pizza.jpg",
+    isPopular: true,
+  },
+
+   
+  {
+    id: 5,
+    name: "Paneer Special",
+    category: "Veg Pizzas",
+    price: 90,
+     image: "/paneer-special-pizza.jpg",
+    isPopular: true,
+
+  },
+
+  {
+    id: 6,
+    name: "Veg Loaded Pizza",
+    category: "Veg Pizzas",
+    price: 120,
+    image: "/veg-loaded-pizza.jpg",
+    isPopular: true,
+
+  },
+
+  {
+    id: 7,
+    name : "Onion & capsicum",
+    category: "Veg Pizzas",
+    price: 90,
+    image: "/O & C -pizza.jpg",
+    isPopular: true,
+
+  },
+
+  {
+    id: 8,
+    name : "Tomato & Corn",
+    category: "Veg Pizzas",
+    price: 90,
+     image: "/T & C -pizza.jpg",
+    isPopular: true,
+  },
+
+  {
+    id: 9,
+    name: "Onion and Corn",
+    category: "Veg Pizzas",
+    price: 90,
+     image: "/O & CO -pizza.jpg",
+    isPopular: true,
+  },
+
+  {
+    id: 10,
+    name : "Paneer and Corn",
+    category: "Veg Pizzas",
+    price: 90,
+    isPopular: true, 
+  },
+
+  {
+    id: 11,
+    name : "Onion and Jalepino",
+    category: "Veg Pizzas",
+    price: 90,
+    isPopular: true,
+  },
+
+  {
+    id: 12,
+    name: "Paneer and Onion",
+    category: "Veg Pizzas",
+    price: 90,
+    isPopular: true,
+  },
+
+  {
+    id: 13,
+    name: "BBQ",
+    category: "NonVeg Pizzas",
+    price: 90,
+    isPopular: true,
+  },
+
+  {
+    id: 14,
+    name: "Spicy Chicken",
+    category: "NonVeg Pizzas",
+    price: 90,
+    isPopular: true,
+  },
+
+  {
+    id: 15,
+    name: "Chicken Sausage",
+    category: "NonVeg Pizzas",
+    price: 90,
+    isPopular: true,
+  },
+
+
+  {
+    id: 16,
+    name: "American Chicken",
+    category: "NonVeg Pizzas",
+    price: 90,
+    isPopular: true,
+  },
+
+ 
+  {
+    id: 17,
+    name: "Onion and BBQ",
+    category: "NonVeg Pizzas",
+    price: 110,
+    isPopular: true,
+  },
+  
+  {
+    id: 18,
+    name: "Capsicum and Spicy Chicken",
+    category: "NonVeg Pizzas",
+    price: 110,
+    isPopular: true,
+  },
+
+   {
+    id: 19,
+    name: "Onion and Chicken Sausage",
+    category: "NonVeg Pizzas",
+    price: 110,
+    isPopular: true,
+  },
+
+
+   {
+    id: 20,
+    name: "Chicken Loaded Pizza",
+    category: "NonVeg Pizzas",
+    price: 130,
+    isPopular: true,
+  },
+
+
+  
+
+];
 
 export default function MenuPage() {
   const [showFilter, setShowFilter] = useState(false);
   const [expandedCategory, setExpandedCategory] = useState(null);
+  const [quantities, setQuantities] = useState({});
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [selectedSizes, setSelectedSizes] = useState({});
   
   const categories = {
     'Veg Pizzas': {
@@ -25,9 +210,6 @@ export default function MenuPage() {
     'Shakes': null,
     'Mojito': null
   };
-
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedSizes, setSelectedSizes] = useState({});
 
   const toggleCategory = (category) => {
     setSelectedCategories(prev => 
@@ -63,6 +245,41 @@ export default function MenuPage() {
                       Object.values(selectedSizes).some(sizes => sizes.length > 0);
 
   const isCategoryExpanded = (category) => expandedCategory === category;
+
+  const updateQuantity = (id, change) => {
+    setQuantities(prev => ({
+      ...prev,
+      [id]: Math.max(1, (prev[id] || 1) + change)
+    }));
+  };
+
+  const handleWhatsAppOrder = (pizzaName, quantity = 1) => {
+    const message = `Hi, I'd like to order ${quantity} ${pizzaName}.`;
+    const phoneNumber = "YOUR_WHATSAPP_NUMBER";
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
+  // Filter pizzas based on selected categories and sizes
+  const filteredPizzas = pizzas.filter(pizza => {
+    // If no filters are selected, show all pizzas
+    if (selectedCategories.length === 0 && 
+        Object.values(selectedSizes).every(arr => arr.length === 0)) {
+      return true;
+    }
+    
+    // Filter by category
+    const categoryMatch = selectedCategories.length === 0 || 
+                         selectedCategories.includes(pizza.category);
+    
+    // Filter by size
+    const sizeMatch = Object.entries(selectedSizes).every(([cat, sizes]) => {
+      if (sizes.length === 0) return true;
+      if (cat !== pizza.category) return true;
+      return sizes.includes(pizza.size);
+    });
+    
+    return categoryMatch && sizeMatch;
+  });
 
   return (
     <div className="menu-page">
@@ -145,6 +362,74 @@ export default function MenuPage() {
           </div>
         </div>
       </header>
+
+      {/* Pizza Grid Section */}
+      <div className="menu-items-container">
+        <h2 className="menu-category-title">Our Delicious Pizzas</h2>
+        <div className="pizza-grid">
+          {filteredPizzas.map(pizza => (
+            <div key={pizza.id} className="pizza-card">
+              {pizza.isPopular && (
+                <div className="popular-tag">
+                  <FaFire /> Popular
+                </div>
+              )}
+              
+              <div className="pizza-image-container">
+                <img 
+                  src={pizza.image} 
+                  alt={pizza.name} 
+                  className="pizza-image"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/placeholder-pizza.jpg';
+                  }}
+                />
+              </div>
+              
+              <div className="pizza-info">
+                <div className="pizza-header">
+                  <h3 className="pizza-name">{pizza.name}</h3>
+                  <div className="rating">
+                    <FaStar className="star-icon" />
+                    <span>{pizza.rating}</span>
+                  </div>
+                </div>
+                
+                <p className="pizza-category">{pizza.category} • {pizza.size}</p>
+                
+                <div className="price-section">
+                  <span className="price">₹{pizza.price}</span>
+                  <div className="quantity-selector">
+                    <button 
+                      onClick={() => updateQuantity(pizza.id, -1)}
+                      className="quantity-btn"
+                    >
+                      <FaMinus />
+                    </button>
+                    <span className="quantity">{quantities[pizza.id] || 1}</span>
+                    <button 
+                      onClick={() => updateQuantity(pizza.id, 1)}
+                      className="quantity-btn"
+                    >
+                      <FaPlus />
+                    </button>
+                  </div>
+                </div>
+                
+                <button 
+                  className="whatsapp-btn"
+                  onClick={() => handleWhatsAppOrder(pizza.name, quantities[pizza.id] || 1)}
+                >
+                  <FaWhatsapp className="whatsapp-icon" />
+                  Order on WhatsApp
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
+
