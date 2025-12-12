@@ -16,7 +16,7 @@ export default function CartPage() {
   const handleCheckout = () => {
     // Add your checkout logic here
     console.log('Proceeding to checkout');
-    // navigate('/checkout');
+    navigate('/checkout');
   };
 
   return (
@@ -70,13 +70,9 @@ export default function CartPage() {
               <span>Subtotal</span>
               <span>₹{getCartTotal()}</span>
             </div>
-            <div className="summary-row">
-              <span>Tax (5%)</span>
-              <span>₹{(getCartTotal() * 0.05).toFixed(2)}</span>
-            </div>
             <div className="summary-row total">
               <span>Total</span>
-              <span>₹{(getCartTotal() * 1.05).toFixed(2)}</span>
+              <span>₹{getCartTotal()}</span>
             </div>
             <button className="checkout-btn" onClick={handleCheckout}>
               Proceed to Checkout

@@ -1,9 +1,8 @@
-import { FaFilter, FaUtensils, FaChevronDown, FaChevronUp, FaChevronRight, FaWhatsapp, FaStar, FaFire, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa';
+import { FaFilter, FaUtensils, FaChevronDown, FaChevronUp, FaChevronRight, FaStar, FaFire, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa';
 import { useState } from 'react';
-import '../styles/MenuPage.css';
-import { useCart } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';
-
+import { useCart } from '../context/CartContext';
+import '../styles/MenuPage.css';
 const pizzas = [
   {
     id: 1,
@@ -203,7 +202,8 @@ export default function MenuPage() {
   const [quantities, setQuantities] = useState({});
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedSizes, setSelectedSizes] = useState({});
-  
+  const { addToCart, getCartCount } = useCart();
+  const navigate = useNavigate();
   const categories = {
     'Veg Pizzas': {
       sizes: ['Regular (7")', 'Medium (10")', 'Large (13")']
@@ -266,13 +266,14 @@ export default function MenuPage() {
     }));
   };
 
-   const addToCart = (pizza, quantity) => {
+   const handleaddToCart = (pizza, quantity) => {
   // Add your cart logic here
   console.log(`Added ${quantity} ${pizza.name} to cart`);
   // Example: You might want to use a context or state management for cart
   // setCartItems(prev => [...prev, { ...pizza, quantity }]);
 };
 
+  
 
   // Filter pizzas based on selected categories and sizes
   const filteredPizzas = pizzas.filter(pizza => {
@@ -339,8 +340,6 @@ export default function MenuPage() {
                       >
                         Clear All
                       </button>
-           
-
 
                     )}
                   </div>
@@ -391,15 +390,12 @@ export default function MenuPage() {
               
           <button 
               className="header-cart-btn"
-              onClick={() => {
-                // Add navigation to cart page here
-                console.log('Go to cart clicked');
-                // Example: navigate('/cart');
-              }}
-            >
+              onClick={() => navigate('/cart')}
+              >
+
               <FaShoppingCart className="cart-icon" />
               Go to Cart
-              <span className="cart-badge">0</span>
+              <span className="cart-badge">{getCartCount()}</span>
             </button>     
 
           </div>
@@ -436,7 +432,7 @@ export default function MenuPage() {
                   <h3 className="pizza-name">{pizza.name}</h3>
                   <div className="rating">
                     <FaStar className="star-icon" />
-                    <span>{pizza.rating}</span>
+                    <span>{pizza.rating }</span>
                   </div>
                 </div>
                 
@@ -473,12 +469,10 @@ export default function MenuPage() {
                   className="cart-btn"
                   onClick={(e) => {
       e.stopPropagation();
-      addToCart(pizza, quantities[pizza.id] || 1);
+      handleAddToCart(pizza, quantities[pizza.id] || 1);
     }}
   >
-
-
-    
+   
                   <FaShoppingCart className="cart-icon" />
                   Add to cart
                 </button>
