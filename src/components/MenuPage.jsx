@@ -1,6 +1,8 @@
 import { FaFilter, FaUtensils, FaChevronDown, FaChevronUp, FaChevronRight, FaWhatsapp, FaStar, FaFire, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa';
 import { useState } from 'react';
 import '../styles/MenuPage.css';
+import { useCart } from '../context/CartContext';
+import { useNavigate } from 'react-router-dom';
 
 const pizzas = [
   {
@@ -294,6 +296,13 @@ export default function MenuPage() {
     return categoryMatch && sizeMatch;
   });
 
+
+   const handleAddToCart = (pizza, quantity) => {
+    addToCart(pizza, quantity);
+    // Reset quantity after adding to cart
+    setQuantities(prev => ({ ...prev, [pizza.id]: 1 }));
+  };
+
   return (
     <div className="menu-page">
       <header className="menu-header">
@@ -316,17 +325,23 @@ export default function MenuPage() {
                 <span>Filter</span>
                 {showFilter ? <FaChevronUp className="chevron-icon" /> : <FaChevronDown className="chevron-icon" />}
               </button>
+
+
               {showFilter && (
                 <div className="filter-dropdown">
                   <div className="filter-dropdown-header">
                     <h3>Filter by Category</h3>
                     {hasAnyFilter && (
-                      <button 
+                      <button
+
                         className="clear-filters"
                         onClick={clearAllFilters}
                       >
                         Clear All
                       </button>
+           
+
+
                     )}
                   </div>
                   <div className="filter-options">
@@ -372,6 +387,21 @@ export default function MenuPage() {
                 </div>
               )}
             </div>
+ 
+              
+          <button 
+              className="header-cart-btn"
+              onClick={() => {
+                // Add navigation to cart page here
+                console.log('Go to cart clicked');
+                // Example: navigate('/cart');
+              }}
+            >
+              <FaShoppingCart className="cart-icon" />
+              Go to Cart
+              <span className="cart-badge">0</span>
+            </button>     
+
           </div>
         </div>
       </header>
@@ -400,6 +430,7 @@ export default function MenuPage() {
                 />
               </div>
               
+              
               <div className="pizza-info">
                 <div className="pizza-header">
                   <h3 className="pizza-name">{pizza.name}</h3>
@@ -411,6 +442,9 @@ export default function MenuPage() {
                 
                 <p className="pizza-category">{pizza.category} • {pizza.size}</p>
                 
+
+              <div className="price-section">
+                <span className="price">₹{pizza.price}</span>
               <div className="cart-actions">
   <div className="quantity-selector">
     <button 
@@ -421,7 +455,7 @@ export default function MenuPage() {
       className="quantity-btn"
     >
 
-                      <FaMinus />
+                  <FaMinus />
                      </button>
     <span className="quantity">{quantities[pizza.id] || 1}</span>
     <button 
@@ -434,7 +468,7 @@ export default function MenuPage() {
                 <FaPlus />
                     </button>
                   </div>
-                </div>
+                
                 <button 
                   className="cart-btn"
                   onClick={(e) => {
@@ -442,12 +476,17 @@ export default function MenuPage() {
       addToCart(pizza, quantities[pizza.id] || 1);
     }}
   >
+
+
+    
                   <FaShoppingCart className="cart-icon" />
                   Add to cart
                 </button>
               </div>
             </div>
-          ))}
+          </div>
+        </div>
+      ))}
         </div>
       </div>
     </div>

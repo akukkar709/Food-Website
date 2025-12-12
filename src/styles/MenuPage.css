@@ -1564,3 +1564,36 @@ Responsive adjustments
 .whatsapp-btn {
   display: none; /* Hide the old button */
 }
+
+
+
+/* Cart Button in Header */
+.header-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+}
+
+.header-cart-btn:hover {
+  background-color: #c1121f;
+}
+
+.header-cart-btn .cart-icon {
+  font-size: 16px;
+}
+
+/* Menu Actions Container */
+.menu-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
