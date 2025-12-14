@@ -1,12 +1,20 @@
 // src/pages/CheckoutPage.jsx
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { FaArrowLeft } from 'react-icons/fa';
 import '../styles/CheckoutPage.css';
 
 export default function CheckoutPage() {
   const { cart, getCartTotal } = useCart();
   const navigate = useNavigate();
+  
+  // Redirect to menu if cart is empty
+  useEffect(() => {
+    if (cart.length === 0) {
+      navigate('/menu');
+    }
+  }, [cart, navigate]);
   
   const [formData, setFormData] = useState({
     name: '',
@@ -33,7 +41,12 @@ export default function CheckoutPage() {
 
   return (
     <div className="checkout-page">
-      <h1>Checkout</h1>
+      <div className="checkout-header">
+        <button className="back-button" onClick={() => navigate(-1)}>
+          <FaArrowLeft className="back-icon" /> Back to Menu
+        </button>
+        <h1>Checkout</h1>
+      </div>
       <div className="checkout-container">
         <form onSubmit={handleSubmit} className="checkout-form">
           <div className="form-group">
@@ -74,7 +87,7 @@ export default function CheckoutPage() {
               rows="3"
             />
           </div>
-
+{/* 
           <div className="form-group">
             <label htmlFor="notes">Order Notes (Optional)</label>
             <textarea
@@ -85,7 +98,7 @@ export default function CheckoutPage() {
               placeholder="Any special instructions for delivery"
               rows="2"
             />
-          </div>
+          </div> */}
 
           <div className="order-summary">
             <h3>Order Summary</h3>
@@ -109,3 +122,6 @@ export default function CheckoutPage() {
     </div>
   );
 }
+
+
+

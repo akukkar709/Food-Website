@@ -13,7 +13,7 @@ export default function Hero({ onOrderNow, onBrowse }) {
           </p>
           <div className="hero-buttons">
             <button className="btn-order-now" onClick={onOrderNow}>
-              Order Now on WhatsApp →
+              Order Now →
             </button>
             <button className="btn-browse" onClick={onBrowse}>
               Browse Collection

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import '../styles/MenuPage.css';
+import EmptyCart from './EmptyCart';
 const pizzas = [
   {
     id: 1,
@@ -224,6 +225,9 @@ export default function MenuPage() {
     'Mojito': null
   };
 
+  
+
+
   const toggleCategory = (category) => {
     setSelectedCategories(prev => 
       prev.includes(category) 
@@ -304,6 +308,7 @@ export default function MenuPage() {
     setQuantities(prev => ({ ...prev, [pizza.id]: 1 }));
   };
 
+  
   return (
     <div className="menu-page">
       <header className="menu-header">
