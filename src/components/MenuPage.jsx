@@ -192,8 +192,81 @@ const pizzas = [
     isPopular: true,
   },
 
+  {
+  id: 21,
+  name: "White Sauce Pasta",
+  category: "Pasta",
+  price: 120,
+  image: "/whiteSause.jpg",
+  type: "veg"
+},
 
-  
+{
+  id: 22,
+  name: "Red Sauce Pasta",
+  category: "Pasta",
+  price: 120,
+  image: "/RedSause.jpg",
+  type: "veg"
+},
+
+{
+  id: 23,
+  name: "Mix Sauce Pasta",
+  category: "Pasta",
+  price: 130,
+  image: "/MixSauce.jpg",
+  type: "veg"
+},
+
+{
+  id: 24,
+  name: "Chicken Pasta",
+  category: "Pasta",
+  price: 140,
+  image: "/ChickenPasta.jpg",
+  type: "non-veg"
+},
+
+{
+  id: 25,
+  name: "Veg Nuggets (10 PCS)",
+  category: "Snacks",
+  price: 120,
+  image: "/VegNuggets.jpg",
+  type: "veg"
+},
+
+{
+  id: 26,
+  name: "Chicken Popcorn (10 PCS)",
+  category: "Snacks",
+  price: 140,
+  image: "/chicken-popcorn.jpg",
+  type: "non-veg"
+},
+
+
+
+{
+  id: 27,
+  name: "Chicken Nuggets (6 PCS)",
+  category: "Snacks",
+  price: 150,
+  image: "/chicken-nuggets.jpg",
+  type: "non-veg"
+},
+
+
+{
+  id: 28,
+  name: "Chicken Wings (6 PCS)",
+  category: "Snacks",
+  price: 180,
+  image: "/chicken-wings.jpg",
+  type: "non-veg"
+}
+
 
 ];
 
@@ -219,13 +292,14 @@ export default function MenuPage() {
     'Sandwich': null,
     'Wraps': null,
     'Desserts': null,
-    'Pasta': null,
+    'Pasta': { 
+      sizes: []
+  },
     'Snacks': null,
     'Shakes': null,
     'Mojito': null
   };
 
-  
 
 
   const toggleCategory = (category) => {
@@ -279,14 +353,18 @@ export default function MenuPage() {
 
   
 
-  // Filter pizzas based on selected categories and sizes
-  const filteredPizzas = pizzas.filter(pizza => {
-    // If no filters are selected, show all pizzas
-    if (selectedCategories.length === 0 && 
-        Object.values(selectedSizes).every(arr => arr.length === 0)) {
-      return true;
-    }
-    
+
+
+    const filteredPizzas = pizzas.filter(pizza => {
+  // If no filters are selected, show all pizzas (except pasta)
+  if (selectedCategories.length === 0 && 
+      Object.values(selectedSizes).every(arr => arr.length === 0)) {
+    return pizza.category !== "Pasta"; // Hide pasta by default
+  }
+
+
+
+
     // Filter by category
     const categoryMatch = selectedCategories.length === 0 || 
                          selectedCategories.includes(pizza.category);
@@ -295,7 +373,7 @@ export default function MenuPage() {
     const sizeMatch = Object.entries(selectedSizes).every(([cat, sizes]) => {
       if (sizes.length === 0) return true;
       if (cat !== pizza.category) return true;
-      return sizes.includes(pizza.size);
+      return sizes.some(size => pizza.size?.includes(size.split(' ')[0]));
     });
     
     return categoryMatch && sizeMatch;
@@ -406,6 +484,9 @@ export default function MenuPage() {
           </div>
         </div>
       </header>
+
+
+      
 
       {/* Pizza Grid Section */}
       <div className="menu-items-container">
