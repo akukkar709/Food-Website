@@ -232,7 +232,7 @@ const pizzas = [
   id: 25,
   name: "Veg Nuggets (10 PCS)",
   category: "Snacks",
-  price: 120,
+  price: 90,
   image: "/VegNuggets.jpg",
   type: "veg"
 },
@@ -241,8 +241,8 @@ const pizzas = [
   id: 26,
   name: "Chicken Popcorn (10 PCS)",
   category: "Snacks",
-  price: 140,
-  image: "/chicken-popcorn.jpg",
+  price: 100,
+  image: "/CP.jpg",
   type: "non-veg"
 },
 
@@ -252,8 +252,8 @@ const pizzas = [
   id: 27,
   name: "Chicken Nuggets (6 PCS)",
   category: "Snacks",
-  price: 150,
-  image: "/chicken-nuggets.jpg",
+  price: 140,
+  image: "/CN.jpg",
   type: "non-veg"
 },
 
@@ -263,9 +263,325 @@ const pizzas = [
   name: "Chicken Wings (6 PCS)",
   category: "Snacks",
   price: 180,
-  image: "/chicken-wings.jpg",
+  image: "/CW.jpg",
   type: "non-veg"
-}
+},
+
+{
+  id: 29,
+  name: "Banana Shake",
+  category: "Shakes",
+   image: "/BananaShake.jpg",
+  price: 70,
+},
+
+{
+  id: 30,
+  name: "Oreo Shake",
+  category: "Shakes",
+  image: "/OreoShake.jpg",
+  price: 100,
+  
+},
+
+{
+  id: 31,
+  name: "Mango Shake",
+  category: "Shakes",
+  image: "/MangoShake.jpg",
+  price: 70,
+  
+},
+
+
+{
+  id: 32,
+  name: "Strawberry Shake",
+  category: "Shakes",
+  image: "/StrawberryShake.jpg",
+  price: 70,
+  
+},
+
+
+// {
+//   id: 33,
+//   name: "Banana Shake",
+//   category: "Shakes",
+//   price: 70,
+ 
+// },
+
+
+{
+  id: 34,
+  name: "Cold Coffee",
+  category: "Shakes",
+   image: "/ColdCoffee.jpg",
+  price: 80,
+ 
+},
+
+
+{
+  id: 35,
+  name: "Black Currant Shake",
+  category: "Shakes",
+  image: "/BC.jpg",
+  price: 100,
+
+},
+
+
+{
+  id: 36,
+  name: "Chocolate Shake",
+  category: "Shakes",
+  image: "/CS.jpg",
+  price: 100,
+
+},
+
+{
+  id: 37,
+  name: "Butter Scotch Shake",
+  category: "Shakes",
+  image: "/BS.jpg",
+  price: 100,
+},
+
+
+{
+  id: 38,
+  name: "Virgin Mojito",
+  category: "Mojito",
+  image: "/VM.jpg",
+  price: 80,
+},
+
+
+
+{
+  id: 39,
+  name: "Watermelon Mojito",
+  category: "Mojito",
+   image: "/WM.jpg",
+  price: 80,
+},
+
+{
+  id: 41,
+  name: "Green Apple Mojito",
+  category: "Mojito",
+  image: "/GreenApple.jpg",
+  price: 80,
+},
+
+
+
+{
+  id: 42,
+  name: "Veg Aloo Tikki Burger",
+  category: "Burgers",
+  image: "/VLT.jpg",
+  price: 80,
+},
+
+{
+  id: 43,
+  name: "Special Veg Burger",
+  category: "Burgers",
+  image: "/SV.jpg",
+  price: 80,
+},
+
+{
+  id: 44,
+  name: "Spicy Paneer Burger",
+  category: "Burgers",
+  image: "/SPB.jpg",
+  price: 80,
+},
+
+
+
+{
+  id: 45,
+  name: "Cheese Burger",
+  category: "Burgers",
+   image: "/CB.png",
+  price: 80,
+},
+
+
+{
+  id: 46,
+  name: "Non-Veg Burger",
+  category: "Burgers",
+  price: 80,
+},
+
+
+{
+  id: 47,
+  name: "Garlic Bread",
+  category: "Garlic Breads",
+  price: 80,
+},
+
+
+{
+  id: 48,
+  name: "Veg Pocket",
+  category: "Garlic Breads",
+  price: 80,
+},
+
+{
+  id: 49,
+  name: "Stuff Garlic Bread",
+  category: "Garlic Breads",
+  price: 80,
+},
+
+{
+  id: 50,
+  name: "Cheese Garlic Bread",
+  category: "Garlic Breads",
+  price: 80,
+},
+
+
+{
+  id: 51,
+  name: "Mushroom Garlic Bread",
+  category: "Garlic Breads",
+  price: 80,
+},
+
+
+
+{
+  id: 52,
+  name: "Add Cheesy Dip/Jalapenos Dip",
+  category: "Garlic Breads",
+  price: 80,
+},
+
+
+{
+  id: 53,
+  name: "Veg Taco",
+  category: "Tacos",
+  price: 80,
+},
+
+
+{
+  id: 54,
+  name: "Non-Veg Taco",
+  category: "Taco",
+  price: 80,
+},
+
+
+
+{
+  id: 55,
+  name: "Veg Wraps",
+  category: "Wraps",
+  price: 80,
+},
+
+
+{
+  id: 56,
+  name: "Paneer Wrap",
+  category: "Wraps",
+  price: 80,
+},
+
+
+
+{
+  id: 57,
+  name: "Chicken Wrap",
+  category: "Wraps",
+  price: 80,
+},
+
+
+{
+  id: 58,
+  name: "Chocolava Cake",
+  category: "Desserts",
+  price: 80,
+},
+
+
+{
+  id: 59,
+  name: "Chocolava Cake",
+  category: "Desserts",
+  price: 80,
+},
+
+{
+  id: 60,
+  name: "Veg Grilled Sandwich",
+  category: "Sandwich",
+  price: 80,
+},
+
+{
+  id: 61,
+  name: "Grilled Paneer Sandwich",
+  category: "Sandwich",
+  price: 80,
+},
+
+{
+  id: 62,
+  name: "Grilled Chicken Sandwich",
+  category: "Sandwich",
+  price: 80,
+},
+
+
+
+
+{
+  id: 63,
+  name: "French Fries(Salted)",
+  category: "French Fries",
+  price: 80,
+},
+
+
+{
+  id: 64,
+  name: "Peri-Peri Fries",
+  category: "French Fries",
+  price: 80,
+},
+
+
+
+{
+  id: 65,
+  name: "French Fries Large",
+  category: "French Fries",
+  price: 80,
+},
+
+
+
+{
+  id: 66,
+  name: "Cheesy Fries",
+  category: "French Fries",
+  price: 80,
+},
 
 
 ];
@@ -296,7 +612,7 @@ export default function MenuPage() {
       sizes: []
   },
     'Snacks': null,
-    'Shakes': null,
+    'Shakes': {},
     'Mojito': null
   };
 
@@ -361,6 +677,8 @@ export default function MenuPage() {
       Object.values(selectedSizes).every(arr => arr.length === 0)) {
     return pizza.category !== "Pasta"; // Hide pasta by default
   }
+
+
 
 
 
