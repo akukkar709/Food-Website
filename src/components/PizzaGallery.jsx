@@ -4,36 +4,25 @@ export default function PizzaGallery() {
   const pizzas = [
     {
       id: 1,
-      name: 'Tandoori Chicken Pizza',
-      description: 'Delicious tandoori chicken with fresh coriander and onions',
-      image: '/pizza.jpg',
-      price: '₹449',
+      name: 'Cheese Onion Pizza',
+      image: '/CheeseOnion.jpg',
+      price: '₹60',
       rating: 4.8
     },
     {
       id: 2,
-      name: 'Margherita',
-      description: 'Classic pizza with fresh mozzarella and basil',
+      name: 'Cheese Capsicum',
       image: '/pizza.jpg',
-      price: '₹299',
+      price: '₹60',
       rating: 4.6
     },
     {
       id: 3,
-      name: 'Pepperoni Feast',
-      description: 'Loaded with premium pepperoni and cheese',
+      name: 'Cheese Tomato',
       image: '/pizza.jpg',
-      price: '₹399',
+      price: '₹60',
       rating: 4.7
     },
-    {
-      id: 4,
-      name: 'Veggie Supreme',
-      description: 'Fresh vegetables with mozzarella and herbs',
-      image: '/pizza.jpg',
-      price: '₹349',
-      rating: 4.5
-    }
   ]
 
   return (
