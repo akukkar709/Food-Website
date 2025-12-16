@@ -5,23 +5,20 @@ export default function PizzaGallery() {
     {
       id: 1,
       name: 'Cheese Onion Pizza',
-      image: '/CheeseOnion.jpg',
-      price: '₹60',
-      rating: 4.8
+      image: '/src/assets/CheeseOnion.jpg',
+      price: '₹60'
     },
     {
       id: 2,
       name: 'Cheese Capsicum',
-      image: '/pizza.jpg',
-      price: '₹60',
-      rating: 4.6
+      image: '/src/assets/CheeseCapsicum.jpg',
+      price: '₹60'
     },
     {
       id: 3,
       name: 'Cheese Tomato',
-      image: '/pizza.jpg',
-      price: '₹60',
-      rating: 4.7
+      image: '/src/assets/CheeseTomato.jpg',
+      price: '₹60'
     },
   ]
 
@@ -42,9 +39,9 @@ export default function PizzaGallery() {
                   alt={pizza.name}
                   className="pizza-image"
                 />
-                <div className="pizza-overlay">
+                {/* <div className="pizza-overlay">
                   <button className="view-btn">View Details</button>
-                </div>
+                </div> */}
               </div>
               
               <div className="pizza-info">
@@ -54,7 +51,7 @@ export default function PizzaGallery() {
                 <div className="pizza-footer">
                   <div className="price-rating">
                     <span className="price">{pizza.price}</span>
-                    <span className="rating">⭐ {pizza.rating}</span>
+                    <span className="rating"> {pizza.rating}</span>
                   </div>
                   <button className="add-to-cart">🛒 Add</button>
                 </div>
