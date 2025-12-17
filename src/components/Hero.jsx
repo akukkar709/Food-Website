@@ -13,10 +13,10 @@ export default function Hero({ onOrderNow, onBrowse }) {
           </p>
           <div className="hero-buttons">
             <button className="btn-order-now" onClick={onOrderNow}>
-              Order Now →
+              Order Now 
             </button>
             <button className="btn-browse" onClick={onBrowse}>
-              Browse Collection
+              Food Items
             </button>
           </div>
         </div>

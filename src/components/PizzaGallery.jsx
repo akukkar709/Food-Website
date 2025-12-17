@@ -53,7 +53,7 @@ export default function PizzaGallery() {
                     <span className="price">{pizza.price}</span>
                     <span className="rating"> {pizza.rating}</span>
                   </div>
-                  <button className="add-to-cart">🛒 Add</button>
+                  <button className="add-to-cart">Add to cart</button>
                 </div>
               </div>
             </div>

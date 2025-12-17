@@ -418,6 +418,8 @@ const pizzas = [
   id: 46,
   name: "Non-Veg Burger",
   category: "Burgers",
+   image: "/NonVeg.jpg",
+
   price: 80,
 },
 
@@ -426,6 +428,7 @@ const pizzas = [
   id: 47,
   name: "Garlic Bread",
   category: "Garlic Breads",
+  image: "/GB.jpg",
   price: 80,
 },
 
@@ -434,6 +437,7 @@ const pizzas = [
   id: 48,
   name: "Veg Pocket",
   category: "Garlic Breads",
+  image: "/VP.jpg",
   price: 80,
 },
 
@@ -441,6 +445,7 @@ const pizzas = [
   id: 49,
   name: "Stuff Garlic Bread",
   category: "Garlic Breads",
+  image: "/SGB.jpg",
   price: 80,
 },
 
@@ -448,6 +453,7 @@ const pizzas = [
   id: 50,
   name: "Cheese Garlic Bread",
   category: "Garlic Breads",
+  image: "/CGB.jpg",
   price: 80,
 },
 
@@ -456,6 +462,7 @@ const pizzas = [
   id: 51,
   name: "Mushroom Garlic Bread",
   category: "Garlic Breads",
+  image: "/MGB.png",
   price: 80,
 },
 
@@ -465,6 +472,7 @@ const pizzas = [
   id: 52,
   name: "Add Cheesy Dip/Jalapenos Dip",
   category: "Garlic Breads",
+  image: "/Ak.jpg",
   price: 80,
 },
 
@@ -473,6 +481,7 @@ const pizzas = [
   id: 53,
   name: "Veg Taco",
   category: "Tacos",
+  image: "/VT.jpg",
   price: 80,
 },
 
@@ -480,7 +489,8 @@ const pizzas = [
 {
   id: 54,
   name: "Non-Veg Taco",
-  category: "Taco",
+  category: "Tacos",
+  image: "/NT.jpg",
   price: 80,
 },
 
@@ -490,6 +500,7 @@ const pizzas = [
   id: 55,
   name: "Veg Wraps",
   category: "Wraps",
+   image: "/VW.jpg",
   price: 80,
 },
 
@@ -498,6 +509,7 @@ const pizzas = [
   id: 56,
   name: "Paneer Wrap",
   category: "Wraps",
+  image: "/PW.jpg",
   price: 80,
 },
 
@@ -507,6 +519,7 @@ const pizzas = [
   id: 57,
   name: "Chicken Wrap",
   category: "Wraps",
+  image: "/CHW.jpg",
   price: 80,
 },
 
@@ -515,21 +528,23 @@ const pizzas = [
   id: 58,
   name: "Chocolava Cake",
   category: "Desserts",
+  image: "/Cl.jpg",
   price: 80,
 },
 
 
-{
-  id: 59,
-  name: "Chocolava Cake",
-  category: "Desserts",
-  price: 80,
-},
+// {
+//   id: 59,
+//   name: "Chocolava Cake",
+//   category: "Desserts",
+//   price: 80,
+// },
 
 {
   id: 60,
   name: "Veg Grilled Sandwich",
   category: "Sandwich",
+  image: "/VGS.jpg",
   price: 80,
 },
 
@@ -537,6 +552,8 @@ const pizzas = [
   id: 61,
   name: "Grilled Paneer Sandwich",
   category: "Sandwich",
+  image: "/PGS.jpg",
+
   price: 80,
 },
 
@@ -544,6 +561,8 @@ const pizzas = [
   id: 62,
   name: "Grilled Chicken Sandwich",
   category: "Sandwich",
+    image: "/GCS.jpg",
+
   price: 80,
 },
 
@@ -554,6 +573,7 @@ const pizzas = [
   id: 63,
   name: "French Fries(Salted)",
   category: "French Fries",
+  image: "/VF.jpg",
   price: 80,
 },
 
@@ -562,6 +582,7 @@ const pizzas = [
   id: 64,
   name: "Peri-Peri Fries",
   category: "French Fries",
+  image: "/PP.jpg",
   price: 80,
 },
 
@@ -571,6 +592,7 @@ const pizzas = [
   id: 65,
   name: "French Fries Large",
   category: "French Fries",
+  image: "/FFL.jpg",
   price: 80,
 },
 
@@ -580,6 +602,7 @@ const pizzas = [
   id: 66,
   name: "Cheesy Fries",
   category: "French Fries",
+  image: "/CFr.jpg",
   price: 80,
 },
 
