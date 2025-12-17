@@ -20,6 +20,33 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+
+// const addToCart = (item) => {
+//   setCartItems(prevItems => {
+//     // Check if item already exists in cart
+//     const existingItem = prevItems.find(cartItem => cartItem.id === item.id);
+    
+//     if (existingItem) {
+//       // If item exists, update quantity
+//       return prevItems.map(cartItem => 
+//         cartItem.id === item.id
+//           ? { 
+//               ...cartItem, 
+//               quantity: cartItem.quantity + 1 
+//             }
+//           : cartItem
+//       );
+//     }
+    
+//     // If item doesn't exist, add it to cart
+//     return [...prevItems, item];
+//   });
+// };
+
+
+
+
+
   const removeFromCart = (pizzaId) => {
     setCart(prevCart => prevCart.filter(item => item.id !== pizzaId));
   };
