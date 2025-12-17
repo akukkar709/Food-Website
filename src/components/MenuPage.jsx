@@ -624,19 +624,17 @@ export default function MenuPage() {
     'Non Veg Pizzas': {
       sizes: ['Regular (7")', 'Medium (10")', 'Large (13")']
     },
-    'Burgers': null,
-    'Garlic Breads': null,
-    'Tacos': null,
-    'French Fries': null,
-    'Sandwich': null,
-    'Wraps': null,
-    'Desserts': null,
-    'Pasta': { 
-      sizes: []
-  },
-    'Snacks': null,
-    'Shakes': {},
-    'Mojito': null
+    'Burgers': {sizes : [] },
+    'Garlic Breads': { sizes: [] },
+    'Tacos': { sizes: [] },
+    'French Fries': { sizes: [] },
+    'Sandwich': { sizes: [] },
+    'Wraps': { sizes: [] },
+    'Desserts': { sizes: [] },
+    'Pasta': { sizes: [] },
+    'Snacks': { sizes: [] },
+    'Shakes': { sizes: [] },
+    'Mojito': { sizes: [] },
   };
 
 
@@ -683,12 +681,12 @@ export default function MenuPage() {
     }));
   };
 
-   const handleaddToCart = (pizza, quantity) => {
-  // Add your cart logic here
-  console.log(`Added ${quantity} ${pizza.name} to cart`);
-  // Example: You might want to use a context or state management for cart
-  // setCartItems(prev => [...prev, { ...pizza, quantity }]);
-};
+//    const handleaddToCart = (pizza, quantity) => {
+//   // Add your cart logic here
+//   console.log(`Added ${quantity} ${pizza.name} to cart`);
+//   // Example: You might want to use a context or state management for cart
+//   // setCartItems(prev => [...prev, { ...pizza, quantity }]);
+// };
 
   
 
@@ -696,14 +694,18 @@ export default function MenuPage() {
 
     const filteredPizzas = pizzas.filter(pizza => {
   // If no filters are selected, show all pizzas (except pasta)
+  // if (selectedCategories.length === 0 && 
+  //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
+  //   return pizza.category !== "Pasta"; // Hide pasta by default
+ const mainCategories = ['Veg Pizzas', 'NonVeg Pizzas'];
+
+
+      
+  // If no filters are selected, show only main categories
   if (selectedCategories.length === 0 && 
       Object.values(selectedSizes).every(arr => arr.length === 0)) {
-    return pizza.category !== "Pasta"; // Hide pasta by default
+    return mainCategories.includes(pizza.category);
   }
-
-
-
-
 
 
     // Filter by category
@@ -831,9 +833,15 @@ export default function MenuPage() {
 
       {/* Pizza Grid Section */}
       <div className="menu-items-container">
-        <h2 className="menu-category-title">Our Delicious Pizzas</h2>
+        <h2 className="menu-category-title">
+{selectedCategories.length === 0 
+      ? "Our Delicious Pizzas" 
+      : `Our ${selectedCategories.join(', ')}`}
+      </h2>
         <div className="pizza-grid">
-          {filteredPizzas.map(pizza => (
+          
+          {filteredPizzas.length >0 ? (
+            filteredPizzas.map(pizza => (
             <div key={pizza.id} className="pizza-card">
               {pizza.isPopular && (
                 <div className="popular-tag">
@@ -907,7 +915,13 @@ export default function MenuPage() {
             </div>
           </div>
         </div>
-      ))}
+      ))
+    ) : (
+       <div className="no-items-message">
+              No items found matching your filters.
+            </div>
+    )}
+
         </div>
       </div>
     </div>
