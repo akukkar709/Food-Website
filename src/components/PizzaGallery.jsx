@@ -157,12 +157,12 @@ export default function PizzaGallery() {
                       <FaStar className="star-icon" /> {item.rating}
                     </span>
                   </div>
-                  <button 
+                  {/* <button 
                     className="add-to-cart"
                     onClick={(e) => handleAddToCart(e, item)}
                   >
                     <FaShoppingCart className="cart-icon" /> Add
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
