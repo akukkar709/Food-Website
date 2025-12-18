@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import '../styles/MenuPage.css';
+import { useNotification } from '../context/NotificationContext';
 import EmptyCart from './EmptyCart';
 const pizzas = [
   {
@@ -616,6 +617,7 @@ export default function MenuPage() {
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedSizes, setSelectedSizes] = useState({});
   const { addToCart, getCartCount } = useCart();
+  const { showNotification } = useNotification();
   const navigate = useNavigate();
   const categories = {
     'Veg Pizzas': {
@@ -688,6 +690,8 @@ export default function MenuPage() {
 //   // setCartItems(prev => [...prev, { ...pizza, quantity }]);
 // };
 
+
+
   
 
 
@@ -725,6 +729,7 @@ export default function MenuPage() {
 
    const handleAddToCart = (pizza, quantity) => {
     addToCart(pizza, quantity);
+     showNotification(`${pizza.name} (${quantity}x) added to cart!`, 'success');
     // Reset quantity after adding to cart
     setQuantities(prev => ({ ...prev, [pizza.id]: 1 }));
   };

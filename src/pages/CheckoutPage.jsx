@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { FaArrowLeft } from 'react-icons/fa';
+import { sendTelegramMessage } from '../services/telegramService';
 import '../styles/CheckoutPage.css';
 
 export default function CheckoutPage() {
@@ -22,6 +23,59 @@ export default function CheckoutPage() {
     address: '',
     notes: ''
   });
+
+
+
+  const CheckoutForm = () => {
+  const { cart, clearCart } = useCart();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleSubmit = async (formData) => {
+    setIsSubmitting(true);
+    
+    const orderDetails = {
+      id: `ORD-${Date.now()}`,
+      customerName: formData.name,
+      phone: formData.phone,
+      address: formData.address,
+      items: cart.map(item => ({
+        name: item.name,
+        quantity: item.quantity,
+        price: item.price,
+      })),
+      total: cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+      paymentMethod: formData.paymentMethod,
+      status: 'Received',
+      timestamp: new Date().toISOString(),
+    };
+    try {
+      // 1. First save order to your database (implement this)
+      // await saveOrderToDatabase(orderDetails);
+      
+      // 2. Send notification to Telegram
+      await sendTelegramMessage(orderDetails);
+      
+      // 3. Clear cart and show success message
+      clearCart();
+      navigate('/order-confirmation', { 
+        state: { orderId: orderDetails.id } 
+      });
+      
+    } catch (error) {
+      console.error('Error placing order:', error);
+      // Show error message to user
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  // ... rest of your component
+};
+
+
+
+
+
+
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;

@@ -70,8 +70,10 @@ import { FaStar, FaShoppingCart, FaUtensils } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import '../styles/PizzaGallery.css';
+import { useNotification } from '../context/NotificationContext';
 
 export default function PizzaGallery() {
+  const { showNotification } = useNotification();
   const navigate = useNavigate();
   const { addToCart } = useCart();
 
@@ -108,6 +110,7 @@ export default function PizzaGallery() {
     quantity: 1
   };
     addToCart({cartItem});
+    showNotification(`${item.name} added to cart!`, 'success');
   };
 
   

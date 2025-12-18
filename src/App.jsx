@@ -5,10 +5,13 @@ import MenuPage from './components/MenuPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import AIAssistant from './components/AIAssistant';
+import { NotificationProvider } from './context/NotificationContext';
 import './App.css';
+
 
 function App() {
   return (
+    <NotificationProvider>
     <CartProvider>
       <div className="app">
         <Routes>
@@ -20,6 +23,7 @@ function App() {
         <AIAssistant />
       </div>
     </CartProvider>
+    </NotificationProvider>
   );
 }
 
