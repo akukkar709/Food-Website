@@ -768,7 +768,7 @@ const successCheckmark = `
             onChange={handleChange}
           >
             <option value="cash">Cash on Delivery</option>
-            <option value="online">Online Payment</option>
+            {/* <option value="online">Online Payment</option> */}
           </select>
         </div>
 
