@@ -1,26 +1,10 @@
-import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Header from './Header'
 import Hero from './Hero'
 import PizzaGallery from './PizzaGallery'
-import WelcomeModal from './WelcomeModal'
 
 export default function HomePage() {
-  const [showWelcomeModal, setShowWelcomeModal] = useState(false)
   const navigate = useNavigate()
-
-  useEffect(() => {
-    const hasRegistered = localStorage.getItem('userRegistered')
-    if (!hasRegistered) {
-      setShowWelcomeModal(true)
-    }
-  }, [])
-
-  const handleRegistrationComplete = () => {
-    localStorage.setItem('userRegistered', 'true')
-    setShowWelcomeModal(false)
-  }
-
 
   const handleOrderNow = () => {
     navigate('/menu')
@@ -35,9 +19,6 @@ export default function HomePage() {
 
   return (
     <>
-      {showWelcomeModal && (
-        <WelcomeModal onRegistrationComplete={handleRegistrationComplete} />
-      )}
       <Header />
       <Hero onOrderNow={handleOrderNow} onBrowse={handleBrowse} />
       <PizzaGallery />

@@ -16,7 +16,7 @@ export default function Header() {
         <div className="header-actions">
           <button 
             className="btn btn-order"
-            onClick={() => alert('Order Now clicked!')}
+            onClick={() => navigate('/menu')}
           >
             Order Now
           </button>
