@@ -648,6 +648,13 @@ export default function MenuPage() {
         : [...prev, category]
     );
     setExpandedCategory(expandedCategory === category ? null : category);
+    
+    // Close filter dropdown on mobile after selecting a category
+    if (window.innerWidth <= 768) {
+      setTimeout(() => {
+        setShowFilter(false);
+      }, 300); // Small delay to allow the selection to be visible
+    }
   };
 
   const toggleSize = (category, size) => {
@@ -657,6 +664,12 @@ export default function MenuPage() {
         ? prev[category].filter(s => s !== size)
         : [...(prev[category] || []), size]
     }));
+
+     if (window.innerWidth <= 768) {
+    setTimeout(() => {
+      setShowFilter(false);
+    }, 300);
+  }
   };
 
   const toggleFilter = () => {
