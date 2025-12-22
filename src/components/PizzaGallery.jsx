@@ -82,19 +82,19 @@ export default function PizzaGallery() {
  {
       id: 1,
     name: 'Cheese Onion Pizza',
-    image: '/src/assets/CheeseOnion.jpg',
+    image: 'cheese-onion-pizza.jpg',
        price: '₹60'
    },
      {
       id: 2,
        name: 'Cheese Capsicum',
-      image: '/src/assets/CheeseCapsicum.jpg',
+      image: 'cheese-capsicum-pizza.jpg',
        price: '₹60'
     },
      {
        id: 3,
       name: 'Cheese Tomato',
-      image: '/src/assets/CheeseTomato.jpg',
+      image: 'cheese-tomato-pizza.jpg',
       price: '₹60'
      },
   ];
