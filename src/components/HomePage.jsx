@@ -22,13 +22,15 @@ export default function HomePage() {
       <Header />
       <Hero onOrderNow={handleOrderNow} onBrowse={handleBrowse} />
       <PizzaGallery />
-      <main className="main-content">
-        <h1>Our Specialties</h1>
+      {/* <main className="main-content">
+      <h1>Our Specialties</h1>
+
         <p>Discover our delicious pizza collection</p>
-      </main>
+      </main> */}
     </>
   )
 }
+
 
 
 

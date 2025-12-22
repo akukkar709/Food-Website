@@ -4,7 +4,8 @@ import HomePage from './components/HomePage';
 import MenuPage from './components/MenuPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
-import AIAssistant from './components/AIAssistant';
+import AboutPage from './pages/AboutPage';
+import Footer from './components/Footer';
 import { NotificationProvider } from './context/NotificationContext';
 import './App.css';
 
@@ -19,8 +20,9 @@ function App() {
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
-        <AIAssistant />
+        <Footer />
       </div>
     </CartProvider>
     </NotificationProvider>
