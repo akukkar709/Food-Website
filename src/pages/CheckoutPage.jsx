@@ -700,6 +700,7 @@ const successCheckmark = `
           </svg>
           <h2>Order Placed Successfully!</h2>
           <p>Your order ID is: <strong>{orderId}</strong></p>
+          <h3>Order Delivered in 30-35 mins</h3>
           <button 
             onClick={() => navigate('/')}
             style={{
@@ -768,7 +769,7 @@ const successCheckmark = `
             onChange={handleChange}
           >
             <option value="cash">Cash on Delivery</option>
-            {/* <option value="online">Online Payment</option> */}
+            <option value="online">Online payment on Delivery</option>
           </select>
         </div>
 
