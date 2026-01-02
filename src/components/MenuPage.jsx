@@ -748,8 +748,21 @@ export default function MenuPage() {
   };
 
   
+  // Promotion Banner Component
+  const PromotionBanner = () => (
+    <div className="promotion-banner">
+      <div className="promotion-content">
+        <span className="promotion-tag">Special Offer</span>
+        <p className="promotion-text">
+          <span className="promotion-highlight">Buy One Get One Free</span> on Medium and Large Pizzas - Every Day!
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <div className="menu-page">
+      <PromotionBanner />
       <header className="menu-header">
         <div className="menu-header-content">
           <div className="menu-header-text">

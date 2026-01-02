@@ -13,8 +13,9 @@ export const sendTelegramMessage = async (orderDetails) => {
     console.error('Backend notification failed, falling back to direct API:', error);
     
     // Fallback to direct Telegram API
-    const BOT_TOKEN = '8308392316:AAHZHWajfzElCSaC2__sGxzIzMD7RxcbHhE';
-    const CHAT_ID = '-1003567466447';
+    const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+
+    const CHAT_ID = process.env.TELEGRAM_CHANNEL_ID;
     
     const message = `📦 *New Order Received* 📦
     
