@@ -6,7 +6,7 @@ export default function Hero({ onOrderNow, onBrowse }) {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            Step into Taste with <span className="brand-name">Pizzwala</span>
+            Step into Taste with <span className="brand-name">PizzaGenie</span>
           </h1>
           <p className="hero-description">
             Discover trendy, delicious, and affordable pizzas that matches your taste.

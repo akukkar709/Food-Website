@@ -608,6 +608,1053 @@ const pizzas = [
 },
 
 
+{
+  id: 67,
+  name: "Margherita Pizza",
+  category: "Veg Pizzas",
+  price: 99, 
+  image: "/MP.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 130,
+  name: "Margherita Pizza",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/MP1.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 90,
+  name: "Margherita Pizza",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+
+{
+  id: 68,
+  name: "Cheese and Tomato",
+  category: "Veg Pizzas",
+  price: 99, 
+  image: "/C&T.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 91,
+  name: "Cheese and Tomato",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/C&T.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 92,
+  name: "Cheese and Tomato",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/C&T.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 69,
+  name: "Double Cheese Margherita(Extra Loaded)",
+  category: "Veg Pizzas",
+  price: 135, 
+  image: "/EL.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 93,
+  name: "Double Cheese Margherita(Extra Loaded)",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/EL.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 94,
+  name: "Double Cheese Margherita(Extra Loaded)",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/EL.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 70,
+  name: "Corn and Cheese Pizza",
+  category: "Veg Pizzas",
+  price: 135, 
+  image: "/Corn&C.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 95,
+  name: "Corn and Cheese Pizza",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/Corn&C.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 96,
+  name: "Corn and Cheese Pizza",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/Corn&C.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 71,
+  name: "Fresh Vegie",
+  category: "Veg Pizzas",
+  price: 135, 
+  image: "/FV.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 97,
+  name: "Fresh Vegie",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/FV.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 98,
+  name: "Fresh Vegie",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/FV.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+{
+  id: 72,
+  name: "Country Delight",
+  category: "Veg Pizzas",
+  price: 135, 
+  image: "/CD.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 99,
+  name: "Country Delight",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/CD.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+
+{
+  id: 100,
+  name: "Country Delight",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/CD.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 73,
+  name: "Corn Crunch Spicy",
+  category: "Veg Pizzas",
+  price: 155, 
+  image: "/CCS.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+{
+  id: 101,
+  name: "Corn Crunch Spicy",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/CCS.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 102,
+  name: "Corn Crunch Spicy",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/CCS.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+
+
+
+{
+  id: 74,
+  name: "Spicy Panner",
+  category: "Veg Pizzas",
+  price: 175, 
+  image: "/SP.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 103,
+  name: "Spicy Panner",
+  category: "Veg Pizzas",
+  price: 175, 
+  image: "/SP.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 104,
+  name: "Spicy Panner",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/SP.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 75,
+  name: "Makhni Tandoori Pizza",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/MT.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 105,
+  name: "Makhni Tandoori Pizza",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/MT.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 106,
+  name: "Makhni Tandoori Pizza",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/MT.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 76,
+  name: "Farm Fresh",
+  category: "Veg Pizzas",
+  price: 155, 
+  image: "/FF1.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 107,
+  name: "Farm Fresh",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/FF1.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 108,
+  name: "Farm Fresh",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/FF1.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+// {
+//   id: 77,
+//   name: "Farm Fresh",
+//   category: "Veg Pizzas",
+//   price: 70, 
+//   image: "/margherita-pizza.jpg", 
+//   isPopular: true,
+//   size: "Regular",
+// },
+
+{
+  id: 78,
+  name: "Veg Mexican",
+  category: "Veg Pizzas",
+  price: 175, 
+  image: "/VM1.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 109,
+  name: "Veg Mexican",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/VM1.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 110,
+  name: "Veg Mexican",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/VM1.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+{
+  id: 79,
+  name: "Veggie Spicy Crunch",
+  category: "Veg Pizzas",
+  price: 175, 
+  image: "/VS.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 111,
+  name: "Veggie Spicy Crunch",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/VS.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 112,
+  name: "Veggie Spicy Crunch",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/VS.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 80,
+  name: "Supreme Paneer Tadka",
+  category: "Veg Pizzas",
+  price: 175, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 113,
+  name: "Supreme Paneer Tadka",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 114,
+  name: "Supreme Paneer Tadka",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+
+
+{
+  id: 81,
+  name: "Vegie Deluxe",
+  category: "Veg Pizzas",
+  price: 205, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 115,
+  name: "Vegie Deluxe",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+
+{
+  id: 116,
+  name: "Vegie Deluxe",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 82,
+  name: "Italiano Pizza",
+  category: "Veg Pizzas",
+  price: 205, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 117,
+  name: "Italiano Pizza",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+
+{
+  id: 118,
+  name: "Italiano Pizza",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 83,
+  name: "Pizza Genie",
+  category: "Veg Pizzas",
+  price: 205, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 119,
+  name: "Pizza Genie",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 120,
+  name: "Pizza Genie",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 84,
+  name: "Veg Wonder",
+  category: "Veg Pizzas",
+  price: 205, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 121,
+  name: "Veg Wonder",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 122,
+  name: "Veg Wonder",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 85,
+  name: "Supreme Veg Exotica",
+  category: "Veg Pizzas",
+  price: 205, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 123,
+  name: "Supreme Veg Exotica",
+  category: "Veg Pizzas",
+  price: 445, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 124,
+  name: "Supreme Veg Exotica",
+  category: "Veg Pizzas",
+  price: 675, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 86,
+  name: "Veg Golden Delight",
+  category: "Veg Pizzas",
+  price: 205, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 125,
+  name: "Veg Golden Delight",
+  category: "Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 126,
+  name: "Veg Golden Delight",
+  category: "Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+
+{
+  id: 87,
+  name: "Veg Supreme",
+  category: "Veg Pizzas",
+  price: 235, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 127,
+  name: "Veg Supreme",
+  category: "Veg Pizzas",
+  price: 445, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 128,
+  name: "Veg Supreme",
+  category: "Veg Pizzas",
+  price: 675, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 88,
+  name: "Veg Cloud",
+  category: "Veg Pizzas",
+  price: 235, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 129,
+  name: "Veg Cloud",
+  category: "Veg Pizzas",
+  price: 445, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 130,
+  name: "Veg Cloud",
+  category: "Veg Pizzas",
+  price: 675, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+
+{
+  id: 131,
+  name: "Sausage Chicken",
+  category: "Non Veg Pizzas",
+  price: 119, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+
+{
+  id: 132,
+  name: "Sausage Chicken",
+  category: "Non Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 133,
+  name: "Sausage Chicken",
+  category: "Non Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 134,
+  name: "Chicken Salami",
+  category: "Non Veg Pizzas",
+  price: 119, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 135,
+  name: "Chicken Salami",
+  category: "Non Veg Pizzas",
+  price: 385, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 136,
+  name: "Chicken Salami",
+  category: "Non Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 137,
+  name: "Spicy Chicken",
+  category: "Non Veg Pizzas",
+  price: 139, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 138,
+  name: "Spicy Chicken",
+  category: "Non Veg Pizzas",
+  price: 429, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+
+{
+  id: 139,
+  name: "Spicy Chicken",
+  category: "Non Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 140,
+  name: "Cheese and BBQ Chicken",
+  category: "Non Veg Pizzas",
+  price: 139, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular"
+},
+
+{
+  id: 141,
+  name: "Cheese and BBQ Chicken",
+  category: "Non Veg Pizzas",
+  price: 429, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 142,
+  name: "Cheese and BBQ Chicken",
+  category: "Non Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 143,
+  name: "Chicken Peri Peri",
+  category: "Non Veg Pizzas",
+  price: 149, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 144,
+  name: "Chicken Peri Peri",
+  category: "Non Veg Pizzas",
+  price: 429, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 145,
+  name: "Chicken Peri Peri",
+  category: "Non Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 146,
+  name: "Tikka Chicken",
+  category: "Non Veg Pizzas",
+  price: 149, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+
+{
+  id: 147,
+  name: "Tikka Chicken",
+  category: "Non Veg Pizzas",
+  price: 429, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 148,
+  name: "Tikka Chicken",
+  category: "Non Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 149,
+  name: "Golden Chicken",
+  category: "Non Veg Pizzas",
+  price: 149, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 150,
+  name: "Golden Chicken",
+  category: "Non Veg Pizzas",
+  price: 429, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 151,
+  name: "Mexician Chicken",
+  category: "Non Veg Pizzas",
+  price: 585, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 152,
+  name: "Mexician Chicken",
+  category: "Non Veg Pizzas",
+  price: 179, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 153,
+  name: "Mexician Chicken",
+  category: "Non Veg Pizzas",
+  price: 449, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 154,
+  name: "Chicken Fiest",
+  category: "Non Veg Pizzas",
+  price: 199, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 155,
+  name: "Chicken Fiest",
+  category: "Non Veg Pizzas",
+  price: 479, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 156,
+  name: "Chicken Fiest",
+  category: "Non Veg Pizzas",
+  price: 649, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+{
+  id: 157,
+  name: "Non Veg Supreme",
+  category: "Non Veg Pizzas",
+  price: 249, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 158,
+  name: "Non Veg Supreme",
+  category: "Non Veg Pizzas",
+  price: 499, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+{
+  id: 159,
+  name: "Non Veg Supreme",
+  category: "Non Veg Pizzas",
+  price: 699, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 160,
+  name: "Metaza",
+  category: "Non Veg Pizzas",
+  price: 249, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 161,
+  name: "Metaza",
+  category: "Non Veg Pizzas",
+  price: 249, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 162,
+  name: "Metaza",
+  category: "Non Veg Pizzas",
+  price: 499, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+
+{
+  id: 163,
+  name: "Metaza",
+  category: "Non Veg Pizzas",
+  price: 699, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+{
+  id: 164,
+  name: "Papperoni Pizza",
+  category: "Non Veg Pizzas",
+  price: 249, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Regular",
+},
+
+{
+  id: 165,
+  name: "Papperoni Pizza",
+  category: "Non Veg Pizzas",
+  price: 449, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Medium",
+},
+
+
+{
+  id: 166,
+  name: "Papperoni Pizza",
+  category: "Non Veg Pizzas",
+  price: 699, 
+  image: "/margherita-pizza.jpg", 
+  isPopular: true,
+  size: "Large",
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 export default function MenuPage() {

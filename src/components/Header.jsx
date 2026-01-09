@@ -25,7 +25,7 @@ export default function Header() {
     <header className="header">
       <div className="header-container">
         <div className="logo"  onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-          <h1>🍕 Pizzwala</h1>
+          <h1>🍕 PizzaGenie</h1>
         </div>
         <nav className="nav-menu">
           <a href="#products" className="nav-link">Food Items</a>
