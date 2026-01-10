@@ -1713,10 +1713,15 @@ export default function MenuPage() {
     setExpandedCategory(expandedCategory === category ? null : category);
     
     // Close filter dropdown on mobile after selecting a category
-    if (window.innerWidth <= 768) {
-      setTimeout(() => {
-        setShowFilter(false);
-      }, 300); // Small delay to allow the selection to be visible
+    // if (window.innerWidth <= 768) {
+    //   setTimeout(() => {
+    //     setShowFilter(false);
+    //   }, 300); // Small delay to allow the selection to be visible
+
+     if (window.innerWidth <= 768 && !['Veg Pizzas', 'Non Veg Pizzas'].includes(category)) {
+    setTimeout(() => {
+      setShowFilter(false);
+    }, 300);
     }
   };
 
@@ -1734,6 +1739,9 @@ export default function MenuPage() {
     }, 300);
   }
   };
+
+
+
 
   const toggleFilter = () => {
     setShowFilter(!showFilter);
