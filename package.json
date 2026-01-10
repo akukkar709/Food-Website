@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
   "dependencies": {
     "framer-motion": "^12.23.26",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^9.39.2",
     "vite": "^5.0.8"
   }
 }
