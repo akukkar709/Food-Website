@@ -12,7 +12,7 @@ const Footer = () => {
           <ul className="contact-info">
             <li>
               <FaPhone className="footer-icon" />
-              <span>+91 9877398270</span>
+              <span>+91 8929292223</span>
             </li>
             {/* <li>
               <FaEnvelope className="footer-icon" />
@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Pizzawala.Made with ❤️ by a student entrepreneur.All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Pizzawala.All Rights Reserved.</p>
       </div>
     </footer>
   );
