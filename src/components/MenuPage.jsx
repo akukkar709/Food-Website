@@ -1641,7 +1641,7 @@ const pizzas = [
   price: 449, 
   image: "/P.jpg", 
   isPopular: true,
-  size: "Medium",
+  size: "Medium(10)",
 },
 
 
@@ -1773,10 +1773,16 @@ export default function MenuPage() {
 
 
     const filteredPizzas = pizzas.filter(pizza => {
-  // If no filters are selected, show all pizzas (except pasta)
-  // if (selectedCategories.length === 0 && 
-  //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
-  //   return pizza.category !== "Pasta"; // Hide pasta by default
+//   // If no filters are selected, show all pizzas (except pasta)
+//   // if (selectedCategories.length === 0 && 
+//   //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
+//   //   return pizza.category !== "Pasta"; // Hide pasta by default
+
+
+    
+
+
+
  const mainCategories = ['Veg Pizzas', 'NonVeg Pizzas'];
 
 
@@ -1786,21 +1792,122 @@ export default function MenuPage() {
       Object.values(selectedSizes).every(arr => arr.length === 0)) {
     return mainCategories.includes(pizza.category);
   }
+//   // if (selectedCategories.length === 0 && 
+//   //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
+//   //   // Show items that are not in the pizza categories or don't have a size specified
+//   //   return !['Veg Pizzas', 'NonVeg Pizzas'].includes(pizza.category) || !pizza.size;
+//   // }
 
 
-    // Filter by category
+
+//   //  if (selectedCategories.length === 0 && 
+//   //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
+//   //   return !['Veg Pizzas', 'NonVeg Pizzas'].includes(pizza.category);
+//   // }
+
+
+//     // Filter by category
+
     const categoryMatch = selectedCategories.length === 0 || 
                          selectedCategories.includes(pizza.category);
+
+
     
-    // Filter by size
+//     // Filter by size
     const sizeMatch = Object.entries(selectedSizes).every(([cat, sizes]) => {
       if (sizes.length === 0) return true;
       if (cat !== pizza.category) return true;
       return sizes.some(size => pizza.size?.includes(size.split(' ')[0]));
     });
+
     
     return categoryMatch && sizeMatch;
-  });
+});
+
+
+
+
+// const mainCategories = ['Veg Pizzas', 'Non Veg Pizzas'];
+
+// const filteredPizzas = pizzas.filter(pizza => {
+
+//   const noCategorySelected = selectedCategories.length === 0;
+//   const noSizeSelected = Object.values(selectedSizes).every(arr => arr.length === 0);
+
+//   const isSizePizza =
+//     pizza.size &&
+//     ['Regular', 'Medium', 'Large'].some(s =>
+//       pizza.size.toLowerCase().includes(s)
+//     );
+
+//   // 🔹 CASE 1: No filters → hide size pizzas
+//   if (noCategorySelected && noSizeSelected) {
+//     return mainCategories.includes(pizza.category) && !isSizePizza;
+//   }
+
+//   // 🔹 Category match
+//   const categoryMatch =
+//     noCategorySelected || selectedCategories.includes(pizza.category);
+
+//   // 🔹 Size match
+//   const sizeMatch = Object.entries(selectedSizes).some(([cat, sizes]) => {
+//     if (sizes.length === 0) return false;
+//     if (cat !== pizza.category) return false;
+
+//     return sizes.some(size =>
+//       pizza.size?.toLowerCase().includes(size.split(' ')[0].toLowerCase())
+//     );
+//   });
+
+//   // 🔹 If size filter is active → must match size + category
+//   if (!noSizeSelected) {
+//     return categoryMatch && sizeMatch;
+//   }
+
+//   // 🔹 If only category filter is active → hide size pizzas
+//   return categoryMatch && !isSizePizza;
+// });
+
+
+// const mainCategories = ['Veg Pizzas', 'Non Veg Pizzas'];
+
+// const filteredPizzas = pizzas.filter(pizza => {
+
+//   const noCategorySelected = selectedCategories.length === 0;
+//   const noSizeSelected = Object.values(selectedSizes).every(arr => arr.length === 0);
+
+//   const isSizePizza =
+//     pizza.size &&
+//     ['Regular(7")', 'Medium(10")', 'Large(13")'].includes(pizza.size.toLowerCase());
+
+//   // 🔴 RULE 1: Default screen → hide all size pizzas
+//   if (noCategorySelected && noSizeSelected) {
+//     return mainCategories.includes(pizza.category) && !isSizePizza;
+//   }
+
+//   // 🔴 RULE 2: If NO size filter but category selected → still hide size pizzas
+//   if (noSizeSelected) {
+//     return (
+//       selectedCategories.includes(pizza.category) &&
+//       !isSizePizza
+//     );
+//   }
+
+//   // 🔴 RULE 3: When size filter is ON → show only matching ones
+//   const categoryMatch =
+//     noCategorySelected || selectedCategories.includes(pizza.category);
+
+//   const sizeMatch = Object.entries(selectedSizes).some(([cat, sizes]) => {
+//     if (sizes.length === 0) return false;
+//     if (cat !== pizza.category) return false;
+
+//     return sizes.some(size =>
+//       pizza.size?.toLowerCase() === size.toLowerCase()
+//     );
+//   });
+
+//   return categoryMatch && sizeMatch;
+// });
 
 
    const handleAddToCart = (pizza, quantity) => {
