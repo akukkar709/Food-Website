@@ -1662,9 +1662,11 @@ export default function MenuPage() {
   const categories = {
     'Veg Pizzas': {
       sizes: ['Regular (7")', 'Medium (10")', 'Large (13")']
+      
     },
     'Non Veg Pizzas': {
       sizes: ['Regular (7")', 'Medium (10")', 'Large (13")']
+      
     },
 
     'Burgers': {sizes : [] },
@@ -1787,6 +1789,9 @@ export default function MenuPage() {
 //   //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
 //   //   return !['Veg Pizzas', 'NonVeg Pizzas'].includes(pizza.category);
 //   // }
+
+
+
 
 
 //     // Filter by category
