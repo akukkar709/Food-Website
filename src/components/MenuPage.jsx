@@ -15,6 +15,7 @@ const pizzas = [
     isPopular: true,
 
   },
+
   {
     id: 2,
     name: "Cheese Capsicum",
@@ -78,7 +79,7 @@ const pizzas = [
     name : "Tomato & Corn",
     category: "Veg Pizzas",
     price: 90,
-     image: "/T & C -pizza.jpg",
+    image: "/T & C -pizza.jpg",
     isPopular: true,
   },
 
@@ -87,7 +88,7 @@ const pizzas = [
     name: "Onion and Corn",
     category: "Veg Pizzas",
     price: 90,
-     image: "/O & CO -pizza.jpg",
+    image: "/O & CO -pizza.jpg",
     isPopular: true,
   },
 
@@ -96,7 +97,7 @@ const pizzas = [
     name : "Paneer and Corn",
     category: "Veg Pizzas",
     price: 100,
-     image: "/P & C -pizza.jpg",
+    image: "/P & C -pizza.jpg",
     isPopular: true, 
   },
 
@@ -194,178 +195,169 @@ const pizzas = [
   },
 
   {
-  id: 21,
-  name: "White Sauce Pasta",
-  category: "Pasta",
-  price: 120,
-  image: "/whiteSause.jpg",
-  type: "veg"
+    id: 21,
+    name: "White Sauce Pasta",
+    category: "Pasta",
+    price: 120,
+    image: "/whiteSause.jpg",
+    type: "veg"
 },
 
 {
-  id: 22,
-  name: "Red Sauce Pasta",
-  category: "Pasta",
-  price: 120,
-  image: "/RedSause.jpg",
-  type: "veg"
+    id: 22,
+    name: "Red Sauce Pasta",
+    category: "Pasta",
+    price: 120,
+    image: "/RedSause.jpg",
+    type: "veg"
 },
 
 {
-  id: 23,
-  name: "Mix Sauce Pasta",
-  category: "Pasta",
-  price: 130,
-  image: "/MixSauce.jpg",
-  type: "veg"
+    id: 23,
+    name: "Mix Sauce Pasta",
+    category: "Pasta",
+    price: 130,
+    image: "/MixSauce.jpg",
+    type: "veg"
 },
 
 {
-  id: 24,
-  name: "Chicken Pasta",
-  category: "Pasta",
-  price: 140,
-  image: "/ChickenPasta.jpg",
-  type: "non-veg"
+    id: 24,
+    name: "Chicken Pasta",
+    category: "Pasta",
+    price: 140,
+    image: "/ChickenPasta.jpg",
+    type: "non-veg"
 },
 
 {
-  id: 25,
-  name: "Veg Nuggets (10 PCS)",
-  category: "Snacks",
-  price: 90,
-  image: "/VegNuggets.jpg",
-  type: "veg"
+    id: 25,
+    name: "Veg Nuggets (10 PCS)",
+    category: "Snacks",
+    price: 90,
+    image: "/VegNuggets.jpg",
+    type: "veg"
 },
 
 {
-  id: 26,
-  name: "Chicken Popcorn (10 PCS)",
-  category: "Snacks",
-  price: 100,
-  image: "/CP.jpg",
-  type: "non-veg"
+    id: 26,
+    name: "Chicken Popcorn (10 PCS)",
+    category: "Snacks",
+    price: 100,
+    image: "/CP.jpg",
+    type: "non-veg"
 },
 
 
 
 {
-  id: 27,
-  name: "Chicken Nuggets (6 PCS)",
-  category: "Snacks",
-  price: 140,
-  image: "/CN.jpg",
-  type: "non-veg"
+    id: 27,
+    name: "Chicken Nuggets (6 PCS)",
+    category: "Snacks",
+    price: 140,
+    image: "/CN.jpg",
+    type: "non-veg"
 },
 
 
 {
-  id: 28,
-  name: "Chicken Wings (6 PCS)",
-  category: "Snacks",
-  price: 180,
-  image: "/CW.jpg",
-  type: "non-veg"
+    id: 28,
+    name: "Chicken Wings (6 PCS)",
+    category: "Snacks",
+    price: 180,
+    image: "/CW.jpg",
+    type: "non-veg"
 },
 
 {
-  id: 29,
-  name: "Banana Shake",
-  category: "Shakes",
-   image: "/BananaShake.jpg",
-  price: 70,
+    id: 29,
+    name: "Banana Shake",
+    category: "Shakes",
+    image: "/BananaShake.jpg",
+    price: 70,
 },
 
 {
-  id: 400,
-  name: "Vanilla Shake",
-  category: "Shakes",
-   image: "/Vani.jpg",
-  price: 70,
+    id: 400,
+    name: "Vanilla Shake",
+    category: "Shakes",
+    image: "/Vani.jpg",
+    price: 70,
 },
 
 {
-  id: 30,
-  name: "Oreo Shake",
-  category: "Shakes",
-  image: "/OreoShake.jpg",
-  price: 100,
+    id: 30,
+    name: "Oreo Shake",
+    category: "Shakes",
+    image: "/OreoShake.jpg",
+    price: 100,
   
 },
 
 {
-  id: 31,
-  name: "Mango Shake",
-  category: "Shakes",
-  image: "/MangoShake.jpg",
-  price: 70,
+    id: 31,
+    name: "Mango Shake",
+    category: "Shakes",
+    image: "/MangoShake.jpg",
+    price: 70,
   
 },
 
 
 {
-  id: 32,
-  name: "Strawberry Shake",
-  category: "Shakes",
-  image: "/StrawberryShake.jpg",
-  price: 70,
+    id: 32,
+    name: "Strawberry Shake",
+    category: "Shakes",
+    image: "/StrawberryShake.jpg",
+    price: 70,
   
 },
 
 
-// {
-//   id: 33,
-//   name: "Banana Shake",
-//   category: "Shakes",
-//   price: 70,
- 
-// },
+  {
+    id: 34,
+    name: "Cold Coffee",
+    category: "Shakes",
+    image: "/ColdCoffee.jpg",
+    price: 80,
+  
+  },
 
+
+  {
+    id: 35,
+    name: "Black Currant Shake",
+    category: "Shakes",
+    image: "/BC.jpg",
+    price: 100,
+
+  },
+
+
+  {
+    id: 36,
+    name: "Chocolate Shake",
+    category: "Shakes",
+    image: "/CS.jpg",
+    price: 100,
+
+  },
 
 {
-  id: 34,
-  name: "Cold Coffee",
-  category: "Shakes",
-   image: "/ColdCoffee.jpg",
-  price: 80,
- 
+    id: 37,
+    name: "Butter Scotch Shake",
+    category: "Shakes",
+    image: "/BS.jpg",
+    price: 100,
 },
 
 
 {
-  id: 35,
-  name: "Black Currant Shake",
-  category: "Shakes",
-  image: "/BC.jpg",
-  price: 100,
-
-},
-
-
-{
-  id: 36,
-  name: "Chocolate Shake",
-  category: "Shakes",
-  image: "/CS.jpg",
-  price: 100,
-
-},
-
-{
-  id: 37,
-  name: "Butter Scotch Shake",
-  category: "Shakes",
-  image: "/BS.jpg",
-  price: 100,
-},
-
-
-{
-  id: 38,
-  name: "Virgin Mojito",
-  category: "Mojito",
-  image: "/VM.jpg",
-  price: 80,
+    id: 38,
+    name: "Virgin Mojito",
+    category: "Mojito",
+    image: "/VM.jpg",
+    price: 80,
 },
 
 
@@ -1656,21 +1648,6 @@ const pizzas = [
 },
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
 
 export default function MenuPage() {
@@ -1689,6 +1666,7 @@ export default function MenuPage() {
     'Non Veg Pizzas': {
       sizes: ['Regular (7")', 'Medium (10")', 'Large (13")']
     },
+
     'Burgers': {sizes : [] },
     'Garlic Breads': { sizes: [] },
     'Tacos': { sizes: [] },
@@ -1739,9 +1717,6 @@ export default function MenuPage() {
     }, 300);
   }
   };
-
-
-
 
   const toggleFilter = () => {
     setShowFilter(!showFilter);
@@ -2037,8 +2012,6 @@ export default function MenuPage() {
         </div>
       </header>
 
-
-      
 
       {/* Pizza Grid Section */}
       <div className="menu-items-container">
