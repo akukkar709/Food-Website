@@ -15,6 +15,7 @@ const pizzas = [
     isPopular: true,
 
   },
+
   {
     id: 2,
     name: "Cheese Capsicum",
@@ -78,7 +79,7 @@ const pizzas = [
     name : "Tomato & Corn",
     category: "Veg Pizzas",
     price: 90,
-     image: "/T & C -pizza.jpg",
+    image: "/T & C -pizza.jpg",
     isPopular: true,
   },
 
@@ -87,7 +88,7 @@ const pizzas = [
     name: "Onion and Corn",
     category: "Veg Pizzas",
     price: 90,
-     image: "/O & CO -pizza.jpg",
+    image: "/O & CO -pizza.jpg",
     isPopular: true,
   },
 
@@ -96,7 +97,7 @@ const pizzas = [
     name : "Paneer and Corn",
     category: "Veg Pizzas",
     price: 100,
-     image: "/P & C -pizza.jpg",
+    image: "/P & C -pizza.jpg",
     isPopular: true, 
   },
 
@@ -194,178 +195,169 @@ const pizzas = [
   },
 
   {
-  id: 21,
-  name: "White Sauce Pasta",
-  category: "Pasta",
-  price: 120,
-  image: "/whiteSause.jpg",
-  type: "veg"
+    id: 21,
+    name: "White Sauce Pasta",
+    category: "Pasta",
+    price: 120,
+    image: "/whiteSause.jpg",
+    type: "veg"
 },
 
 {
-  id: 22,
-  name: "Red Sauce Pasta",
-  category: "Pasta",
-  price: 120,
-  image: "/RedSause.jpg",
-  type: "veg"
+    id: 22,
+    name: "Red Sauce Pasta",
+    category: "Pasta",
+    price: 120,
+    image: "/RedSause.jpg",
+    type: "veg"
 },
 
 {
-  id: 23,
-  name: "Mix Sauce Pasta",
-  category: "Pasta",
-  price: 130,
-  image: "/MixSauce.jpg",
-  type: "veg"
+    id: 23,
+    name: "Mix Sauce Pasta",
+    category: "Pasta",
+    price: 130,
+    image: "/MixSauce.jpg",
+    type: "veg"
 },
 
 {
-  id: 24,
-  name: "Chicken Pasta",
-  category: "Pasta",
-  price: 140,
-  image: "/ChickenPasta.jpg",
-  type: "non-veg"
+    id: 24,
+    name: "Chicken Pasta",
+    category: "Pasta",
+    price: 140,
+    image: "/ChickenPasta.jpg",
+    type: "non-veg"
 },
 
 {
-  id: 25,
-  name: "Veg Nuggets (10 PCS)",
-  category: "Snacks",
-  price: 90,
-  image: "/VegNuggets.jpg",
-  type: "veg"
+    id: 25,
+    name: "Veg Nuggets (10 PCS)",
+    category: "Snacks",
+    price: 90,
+    image: "/VegNuggets.jpg",
+    type: "veg"
 },
 
 {
-  id: 26,
-  name: "Chicken Popcorn (10 PCS)",
-  category: "Snacks",
-  price: 100,
-  image: "/CP.jpg",
-  type: "non-veg"
+    id: 26,
+    name: "Chicken Popcorn (10 PCS)",
+    category: "Snacks",
+    price: 100,
+    image: "/CP.jpg",
+    type: "non-veg"
 },
 
 
 
 {
-  id: 27,
-  name: "Chicken Nuggets (6 PCS)",
-  category: "Snacks",
-  price: 140,
-  image: "/CN.jpg",
-  type: "non-veg"
+    id: 27,
+    name: "Chicken Nuggets (6 PCS)",
+    category: "Snacks",
+    price: 140,
+    image: "/CN.jpg",
+    type: "non-veg"
 },
 
 
 {
-  id: 28,
-  name: "Chicken Wings (6 PCS)",
-  category: "Snacks",
-  price: 180,
-  image: "/CW.jpg",
-  type: "non-veg"
+    id: 28,
+    name: "Chicken Wings (6 PCS)",
+    category: "Snacks",
+    price: 180,
+    image: "/CW.jpg",
+    type: "non-veg"
 },
 
 {
-  id: 29,
-  name: "Banana Shake",
-  category: "Shakes",
-   image: "/BananaShake.jpg",
-  price: 70,
+    id: 29,
+    name: "Banana Shake",
+    category: "Shakes",
+    image: "/BananaShake.jpg",
+    price: 70,
 },
 
 {
-  id: 400,
-  name: "Vanilla Shake",
-  category: "Shakes",
-   image: "/Vani.jpg",
-  price: 70,
+    id: 400,
+    name: "Vanilla Shake",
+    category: "Shakes",
+    image: "/Vani.jpg",
+    price: 70,
 },
 
 {
-  id: 30,
-  name: "Oreo Shake",
-  category: "Shakes",
-  image: "/OreoShake.jpg",
-  price: 100,
+    id: 30,
+    name: "Oreo Shake",
+    category: "Shakes",
+    image: "/OreoShake.jpg",
+    price: 100,
   
 },
 
 {
-  id: 31,
-  name: "Mango Shake",
-  category: "Shakes",
-  image: "/MangoShake.jpg",
-  price: 70,
+    id: 31,
+    name: "Mango Shake",
+    category: "Shakes",
+    image: "/MangoShake.jpg",
+    price: 70,
   
 },
 
 
 {
-  id: 32,
-  name: "Strawberry Shake",
-  category: "Shakes",
-  image: "/StrawberryShake.jpg",
-  price: 70,
+    id: 32,
+    name: "Strawberry Shake",
+    category: "Shakes",
+    image: "/StrawberryShake.jpg",
+    price: 70,
   
 },
 
 
-// {
-//   id: 33,
-//   name: "Banana Shake",
-//   category: "Shakes",
-//   price: 70,
- 
-// },
+  {
+    id: 34,
+    name: "Cold Coffee",
+    category: "Shakes",
+    image: "/ColdCoffee.jpg",
+    price: 80,
+  
+  },
 
+
+  {
+    id: 35,
+    name: "Black Currant Shake",
+    category: "Shakes",
+    image: "/BC.jpg",
+    price: 100,
+
+  },
+
+
+  {
+    id: 36,
+    name: "Chocolate Shake",
+    category: "Shakes",
+    image: "/CS.jpg",
+    price: 100,
+
+  },
 
 {
-  id: 34,
-  name: "Cold Coffee",
-  category: "Shakes",
-   image: "/ColdCoffee.jpg",
-  price: 80,
- 
+    id: 37,
+    name: "Butter Scotch Shake",
+    category: "Shakes",
+    image: "/BS.jpg",
+    price: 100,
 },
 
 
 {
-  id: 35,
-  name: "Black Currant Shake",
-  category: "Shakes",
-  image: "/BC.jpg",
-  price: 100,
-
-},
-
-
-{
-  id: 36,
-  name: "Chocolate Shake",
-  category: "Shakes",
-  image: "/CS.jpg",
-  price: 100,
-
-},
-
-{
-  id: 37,
-  name: "Butter Scotch Shake",
-  category: "Shakes",
-  image: "/BS.jpg",
-  price: 100,
-},
-
-
-{
-  id: 38,
-  name: "Virgin Mojito",
-  category: "Mojito",
-  image: "/VM.jpg",
-  price: 80,
+    id: 38,
+    name: "Virgin Mojito",
+    category: "Mojito",
+    image: "/VM.jpg",
+    price: 80,
 },
 
 
@@ -1641,7 +1633,7 @@ const pizzas = [
   price: 449, 
   image: "/P.jpg", 
   isPopular: true,
-  size: "Medium",
+  size: "Medium(10)",
 },
 
 
@@ -1654,21 +1646,6 @@ const pizzas = [
   isPopular: true,
   size: "Large",
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ];
@@ -1685,10 +1662,13 @@ export default function MenuPage() {
   const categories = {
     'Veg Pizzas': {
       sizes: ['Regular (7")', 'Medium (10")', 'Large (13")']
+      
     },
     'Non Veg Pizzas': {
       sizes: ['Regular (7")', 'Medium (10")', 'Large (13")']
+      
     },
+
     'Burgers': {sizes : [] },
     'Garlic Breads': { sizes: [] },
     'Tacos': { sizes: [] },
@@ -1713,10 +1693,15 @@ export default function MenuPage() {
     setExpandedCategory(expandedCategory === category ? null : category);
     
     // Close filter dropdown on mobile after selecting a category
-    if (window.innerWidth <= 768) {
-      setTimeout(() => {
-        setShowFilter(false);
-      }, 300); // Small delay to allow the selection to be visible
+    // if (window.innerWidth <= 768) {
+    //   setTimeout(() => {
+    //     setShowFilter(false);
+    //   }, 300); // Small delay to allow the selection to be visible
+
+     if (window.innerWidth <= 768 && !['Veg Pizzas', 'Non Veg Pizzas'].includes(category)) {
+    setTimeout(() => {
+      setShowFilter(false);
+    }, 300);
     }
   };
 
@@ -1773,10 +1758,16 @@ export default function MenuPage() {
 
 
     const filteredPizzas = pizzas.filter(pizza => {
-  // If no filters are selected, show all pizzas (except pasta)
-  // if (selectedCategories.length === 0 && 
-  //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
-  //   return pizza.category !== "Pasta"; // Hide pasta by default
+//   // If no filters are selected, show all pizzas (except pasta)
+//   // if (selectedCategories.length === 0 && 
+//   //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
+//   //   return pizza.category !== "Pasta"; // Hide pasta by default
+
+
+    
+
+
+
  const mainCategories = ['Veg Pizzas', 'NonVeg Pizzas'];
 
 
@@ -1786,21 +1777,125 @@ export default function MenuPage() {
       Object.values(selectedSizes).every(arr => arr.length === 0)) {
     return mainCategories.includes(pizza.category);
   }
+//   // if (selectedCategories.length === 0 && 
+//   //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
+//   //   // Show items that are not in the pizza categories or don't have a size specified
+//   //   return !['Veg Pizzas', 'NonVeg Pizzas'].includes(pizza.category) || !pizza.size;
+//   // }
 
 
-    // Filter by category
+
+//   //  if (selectedCategories.length === 0 && 
+//   //     Object.values(selectedSizes).every(arr => arr.length === 0)) {
+//   //   return !['Veg Pizzas', 'NonVeg Pizzas'].includes(pizza.category);
+//   // }
+
+
+
+
+
+//     // Filter by category
+
     const categoryMatch = selectedCategories.length === 0 || 
                          selectedCategories.includes(pizza.category);
+
+
     
-    // Filter by size
+//     // Filter by size
     const sizeMatch = Object.entries(selectedSizes).every(([cat, sizes]) => {
       if (sizes.length === 0) return true;
       if (cat !== pizza.category) return true;
       return sizes.some(size => pizza.size?.includes(size.split(' ')[0]));
     });
+
     
     return categoryMatch && sizeMatch;
-  });
+});
+
+
+
+
+// const mainCategories = ['Veg Pizzas', 'Non Veg Pizzas'];
+
+// const filteredPizzas = pizzas.filter(pizza => {
+
+//   const noCategorySelected = selectedCategories.length === 0;
+//   const noSizeSelected = Object.values(selectedSizes).every(arr => arr.length === 0);
+
+//   const isSizePizza =
+//     pizza.size &&
+//     ['Regular', 'Medium', 'Large'].some(s =>
+//       pizza.size.toLowerCase().includes(s)
+//     );
+
+//   // 🔹 CASE 1: No filters → hide size pizzas
+//   if (noCategorySelected && noSizeSelected) {
+//     return mainCategories.includes(pizza.category) && !isSizePizza;
+//   }
+
+//   // 🔹 Category match
+//   const categoryMatch =
+//     noCategorySelected || selectedCategories.includes(pizza.category);
+
+//   // 🔹 Size match
+//   const sizeMatch = Object.entries(selectedSizes).some(([cat, sizes]) => {
+//     if (sizes.length === 0) return false;
+//     if (cat !== pizza.category) return false;
+
+//     return sizes.some(size =>
+//       pizza.size?.toLowerCase().includes(size.split(' ')[0].toLowerCase())
+//     );
+//   });
+
+//   // 🔹 If size filter is active → must match size + category
+//   if (!noSizeSelected) {
+//     return categoryMatch && sizeMatch;
+//   }
+
+//   // 🔹 If only category filter is active → hide size pizzas
+//   return categoryMatch && !isSizePizza;
+// });
+
+
+// const mainCategories = ['Veg Pizzas', 'Non Veg Pizzas'];
+
+// const filteredPizzas = pizzas.filter(pizza => {
+
+//   const noCategorySelected = selectedCategories.length === 0;
+//   const noSizeSelected = Object.values(selectedSizes).every(arr => arr.length === 0);
+
+//   const isSizePizza =
+//     pizza.size &&
+//     ['Regular(7")', 'Medium(10")', 'Large(13")'].includes(pizza.size.toLowerCase());
+
+//   // 🔴 RULE 1: Default screen → hide all size pizzas
+//   if (noCategorySelected && noSizeSelected) {
+//     return mainCategories.includes(pizza.category) && !isSizePizza;
+//   }
+
+//   // 🔴 RULE 2: If NO size filter but category selected → still hide size pizzas
+//   if (noSizeSelected) {
+//     return (
+//       selectedCategories.includes(pizza.category) &&
+//       !isSizePizza
+//     );
+//   }
+
+//   // 🔴 RULE 3: When size filter is ON → show only matching ones
+//   const categoryMatch =
+//     noCategorySelected || selectedCategories.includes(pizza.category);
+
+//   const sizeMatch = Object.entries(selectedSizes).some(([cat, sizes]) => {
+//     if (sizes.length === 0) return false;
+//     if (cat !== pizza.category) return false;
+
+//     return sizes.some(size =>
+//       pizza.size?.toLowerCase() === size.toLowerCase()
+//     );
+//   });
+
+//   return categoryMatch && sizeMatch;
+// });
 
 
    const handleAddToCart = (pizza, quantity) => {
@@ -1922,8 +2017,6 @@ export default function MenuPage() {
         </div>
       </header>
 
-
-      
 
       {/* Pizza Grid Section */}
       <div className="menu-items-container">
